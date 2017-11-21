@@ -95,12 +95,15 @@
 
         $("#display").append(fridgeMagnet);
 
-        // Add action to change the class of the hidden divs to display the letter text in black if the corresponding letter button is clicked
+        // Add action to change the class of the white text divs to display the letter text in black if the corresponding letter button is clicked
+	//should be some sort on "on click" find div with (this) and change class to .guessed from CSS file
+	//yes I am aware that white text is a terrible method for design, but it works!
         temp.text($(this).attr("data-letter"));
 
-        //build action to figure out when game is won i.e. every array element is selected
+        //build action to figure out when game is won i.e. every array element has it's classed change to visisble 
+	//build action to send alert when game is lost and DecGuessesLeft reaches 0 and not all divs are uncovered
 
-        //build action on the "start" div to restart the game 
+        //build action on the "start" div to restart the game - set GuessesLeft back to 15 and randomly select new word from teams array
 
 
 
